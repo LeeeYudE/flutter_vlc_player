@@ -83,9 +83,9 @@ class VlcPlayerController extends ValueNotifier<VlcPlayerValue> {
   /// Determine if platform is ready to call initialize method
   bool? get isReadyToInitialize => _isReadyToInitialize;
 
-  /// This is just exposed for testing. It shouldn't be used by anyone depending
-  /// on the plugin.
-  @visibleForTesting
+  // /// This is just exposed for testing. It shouldn't be used by anyone depending
+  // /// on the plugin.
+  // @visibleForTesting
   int? get viewId => _viewId;
 
   ///
