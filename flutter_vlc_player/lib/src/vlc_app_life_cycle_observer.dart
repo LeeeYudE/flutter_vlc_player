@@ -14,15 +14,15 @@ class VlcAppLifeCycleObserver extends Object with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     switch (state) {
-      case AppLifecycleState.paused:
-        _wasPlayingBeforePause = _controller.value.isPlaying;
-        _controller.pause();
-      case AppLifecycleState.resumed:
-        if (_wasPlayingBeforePause) {
-          _controller.play();
-        }
-      default:
-    }
+    //   case AppLifecycleState.paused:
+    //     _wasPlayingBeforePause = _controller.value.isPlaying;
+    //     _controller.pause();
+    //   case AppLifecycleState.resumed:
+    //     if (_wasPlayingBeforePause) {
+    //       _controller.play();
+    //     }
+    //   default:
+    // }
   }
 
   void dispose() {
